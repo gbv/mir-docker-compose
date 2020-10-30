@@ -1,1 +1,7 @@
+# default data dirs
+mir-data/
+mir-home/
+postgres-data/
+solr-data/
+
 mir-docker-compose.iml
