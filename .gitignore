@@ -1,1 +1,6 @@
 mir-docker-compose.iml
+mir-data/
+mir-home/
+mir-logs/
+postgres-data/
+solr-data/
