@@ -13,7 +13,7 @@ services:
     ports:
     - ${DB_PORT}:5432
   solr:
-    image: vzgreposis/mir-solr:master
+    image: vzgreposis/mir-solr:main
     restart: always
     volumes:
     - ${SOLR_DATA}:/var/solr-data
@@ -34,6 +34,7 @@ services:
     volumes:
     - ${MIR_HOME}:/mcr/home/
     - ${MIR_DATA}:/mcr/data/
+    - ${MIR_LOGS}:/mcr/logs/
     depends_on:
       - db
       - solr
