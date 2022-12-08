@@ -13,14 +13,14 @@ services:
     ports:
     - ${DB_PORT}:5432
   solr:
-    image: vzgreposis/mir-solr:main
+    image: vzgreposis/mir-solr:2022.06.x
     restart: always
     volumes:
     - ${SOLR_DATA}:/var/solr-data
     ports:
     - ${SOLR_HTTP}:8983
   mir:
-    image: vzgreposis/mir:2021.06.x
+    image: vzgreposis/mir:2022.06.x
     restart: always
     environment:
     - APP_CONTEXT=${APP_CONTEXT}
